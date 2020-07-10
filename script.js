@@ -89,5 +89,5 @@ function getCurrentPosition() {
   navigator.geolocation.getCurrentPosition(retrievePosition);
 }
 
-let location = document.querySelector("#location");
-location.addEventListener("click", getCurrentPosition);
+let getLocation = document.querySelector("#location");
+getLocation.addEventListener("click", getCurrentPosition);
