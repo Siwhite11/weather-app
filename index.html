@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <link rel="stylesheet" href="src/styles.css" />
+
+  <script src="src/index.js"> </script>
+
+
+  <script src="https://kit.fontawesome.com/bb4ce9bdc1.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <title>Stephanie's Weather Report</title>
+</head>
+
+<body>
+  <h1>
+    New York
+  </h1>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h2><span class="getDay">Saturday</h2>
+        <h2><span id="tempNow">76°F</span></h2>
+        <img class="now" src="src/images/sunny.png" />
+      </div>
+      </>
+      <div class="col-6">
+
+        <span class="info"></span>
+        <form id="form1">
+          <span class="changeCity">Change City</span><br />
+          <input type="text" placeholder="Enter a city" autocomplete="off" autofocus="on" id="search-text-input" />
+          <input class="search" type="submit" value="Search" />
+        </form>
+        <form>
+          <input class="search2" id="location" type="submit" value="Current Location" />
+        </form>
+
+        <h4>
+          Date Here<h4>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        Sunday
+        <br /><img class="pics" src="src/images/sun-cloud.png" />
+        <br /> 70°F
+      </div>
+      <div class="col">
+        Monday </span><br />
+        <img class="pics" src="src/images/rainy.png" />
+        <br />68°F
+      </div>
+      <div class="col">
+        Tuesday <br />
+        <img class="pics" src="src/images/sunny.png" />
+        <br />75°F
+      </div>
+      <div class="col">
+        Wendesday
+        <br /><img class="pics" src="src/images/sun-cloud.png" />
+        <br />72°F
+      </div>
+      <div class="col">
+        Thursday <br />
+        <img class="pics" src="src/images/sunny.png" />
+        <br />73°F
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
