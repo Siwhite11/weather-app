@@ -54,6 +54,7 @@ function showTemp(response) {
   let tempElement = document.querySelector("#tempNow");
   let tempNow = Math.round(response.data.main.temp);
   tempElement.innerHTML = `${tempNow}°F`;
+  fahrenheitTemp = response.data.main.temp;
 }
 
 let form1 = document.querySelector("#form1");
@@ -91,3 +92,26 @@ function getCurrentPosition() {
 
 let getLocation = document.querySelector("#location");
 getLocation.addEventListener("click", getCurrentPosition);
+
+//extra
+//let humidity = document.querySelector("#humidity");
+//humidity.innerHTML = Math.round(response.data.main.humidity);
+
+//let wind = document.querySelector("#wind");
+//wind.innerHTML = Math.round(response.data.wind.speed);
+
+//let feels = document.querySelector("#feels");
+//feels.innerHTML = Math.round(response.data.main.feels_like);
+
+// convert the temps
+
+function displayCelsiusTemp(event) {
+  event.preventDefault();
+  let ctemp = Math.round(((fahrenheitTemp - 32) * 5) / 9);
+  let temperatureElement = document.querySelector("#c-link");
+  tempNow.innerHTML = ctemp;
+}
+
+let fahrenheitTemp = null;
+let celsiusLink = document.querySelector("#c-link");
+celsiusLink.addEventListener("click", displayCelsiusTemp);
