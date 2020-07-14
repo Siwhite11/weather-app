@@ -58,7 +58,6 @@ h2 {
 .me {
   font-size: 15px;
 }
-
-.extra {
-  list-style-type: none;
+.description {
+  text-transform: capitalize;
 }
