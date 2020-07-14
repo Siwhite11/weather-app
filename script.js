@@ -61,8 +61,9 @@ function showTemp(response) {
   let currentWind = document.querySelector("#wind");
   let wind = Math.round(response.data.wind.speed);
   currentWind.innerHTML = `${wind} mph`;
+  let currentFeels = document.querySelector("#feels");
   let feels = document.querySelector("#feels");
-  feels.innerHTML = Math.round(response.data.main.feels_like);
+  currentFeels.innerHTML = Math.round(response.data.main.feels_like);
 }
 
 let form1 = document.querySelector("#form1");
@@ -101,8 +102,8 @@ function getCurrentPosition() {
 let getLocation = document.querySelector("#location");
 getLocation.addEventListener("click", getCurrentPosition);
 
-let descriptionElement = document.querySelector("#description");
-descriptionElement.innerHTML = response.data.weather[0].description;
+//let descriptionElement = document.querySelector("#description");
+//descriptionElement.innerHTML = response.data.weather[0].description;
 
 // convert the temps
 
