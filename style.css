@@ -26,9 +26,8 @@ h2 {
   left: 50px;
   position: relative;
   margin-bottom: 10px;
-  text-transform: capitalize;
 }
-.description {
+h3 {
   text-transform: capitalize;
 }
 .main {
