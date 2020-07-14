@@ -85,6 +85,12 @@ function showPosition(response) {
   let temperature = Math.round(response.data.main.temp);
   h1.innerHTML = `${response.data.name}`;
   tempNow.innerHTML = `${temperature}°F`;
+  let currentFeels = document.querySelector("#feels");
+  let feels = Math.round(response.data.main.feels_like);
+  currentFeels.innerHTML = `${feels}°F`;
+  let currentWind = Math.round(response.data.wind.speed);
+  let wind = document.querySelector("#wind");
+  wind.innerHTML = `${currentWind} mph`;
 }
 
 function retrievePosition(position) {
