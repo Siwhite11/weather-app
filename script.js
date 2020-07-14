@@ -58,7 +58,7 @@ function showTemp(response) {
   let currentHumidity = document.querySelector("#humidity");
   let humidity = Math.round(response.data.main.humidity);
   currentHumidity.innerHTML = `${humidity}%`;
-
+  console.log(humidity);
   let currentFeels = document.querySelector("#feels");
   let feels = Math.round(response.data.main.feels_like);
   currentFeels.innerHTML = `${feels}°F`;
