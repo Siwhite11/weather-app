@@ -64,6 +64,9 @@ function showTemp(response) {
   let currentWind = Math.round(response.data.wind.speed);
   let wind = document.querySelector("#wind");
   wind.innerHTML = `Wind speed ${currentWind} mph`;
+  let description = response.data.weather[0].description;
+  let currentDescription = document.querySelector("description");
+  currentDescription.innerHTML = `${description}`;
 }
 
 let form1 = document.querySelector("#form1");
