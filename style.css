@@ -28,6 +28,14 @@ h2 {
   margin-bottom: 10px;
   text-transform: capitalize;
 }
+h3 {
+  text-align: left;
+  left: 50px;
+  position: relative;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
 .main {
   width: 100px;
 }
