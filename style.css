@@ -28,6 +28,7 @@ h2 {
   margin-bottom: 10px;
 }
 h3 {
+  text-align: left;
   text-transform: capitalize;
 }
 .main {
