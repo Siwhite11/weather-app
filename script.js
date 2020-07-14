@@ -62,11 +62,10 @@ function showTemp(response) {
   let currentFeels = document.querySelector("#feels");
   let feels = Math.round(response.data.main.feels_like);
   currentFeels.innerHTML = `${feels}°F`;
+  let currentWind = Math.round(response.data.wind.speed);
+  let wind = document.querySelector("#wind");
+  wind.innerHTML = `${currentWind} mph`;
 }
-
-let currentWind = Math.round(response.data.wind.speed);
-let wind = document.querySelector("#wind");
-wind.innerHTML = `${currentWind} mph`;
 
 let form1 = document.querySelector("#form1");
 form1.addEventListener("submit", search);
