@@ -111,7 +111,6 @@ function showPosition(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
 }
-}
 
 function retrievePosition(position) {
   let apiKey = "e5484fddc20637c7532aced4dfc662f6";
