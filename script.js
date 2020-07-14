@@ -34,8 +34,8 @@ let date = now.getDate();
 let day = days[now.getDay()];
 let month = months[now.getMonth()];
 let year = now.getFullYear();
-let h4 = document.querySelector("h4");
-h4.innerHTML = ` ${hours}:${minutes} ${day} ${month} ${date} ${year}`;
+let h3 = document.querySelector("h3");
+h3.innerHTML = ` ${hours}:${minutes} ${day} ${month} ${date} ${year}`;
 
 let getDay = document.querySelector("h2");
 getDay.innerHTML = `${day}`;
