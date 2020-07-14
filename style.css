@@ -10,6 +10,7 @@ body {
   border-radius: 10px;
   box-shadow: 10px 5px 5px #7b7b83;
 }
+
 h1 {
   font-family: "Dancing Script", cursive;
   font-size: 65px;
@@ -25,6 +26,10 @@ h2 {
   left: 50px;
   position: relative;
   margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.description {
+  text-transform: capitalize;
 }
 .main {
   width: 100px;
@@ -57,7 +62,4 @@ h2 {
 
 .me {
   font-size: 15px;
-}
-.description {
-  text-transform: capitalize;
 }
