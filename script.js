@@ -65,7 +65,7 @@ function showTemp(response) {
   let wind = document.querySelector("#wind");
   wind.innerHTML = `Wind speed ${currentWind} mph`;
   let description = response.data.weather[0].description;
-  let currentDescription = document.querySelector("description");
+  let currentDescription = document.querySelector("#description");
   currentDescription.innerHTML = `${description}`;
 }
 
@@ -97,6 +97,9 @@ function showPosition(response) {
   let currentWind = Math.round(response.data.wind.speed);
   let wind = document.querySelector("#wind");
   wind.innerHTML = `Wind speed ${currentWind} mph`;
+  let description = response.data.weather[0].description;
+  let currentDescription = document.querySelector("#description");
+  currentDescription.innerHTML = `${description}`;
 }
 
 function retrievePosition(position) {
