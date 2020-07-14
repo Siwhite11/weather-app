@@ -79,6 +79,7 @@ function searchCity(city) {
 //Current Location//
 function showPosition(response) {
   event.preventDefault();
+  console.log(response.data.main);
   let h1 = document.querySelector("h1");
   let h2 = document.querySelector("tempNow");
   let temperature = Math.round(response.data.main.temp);
