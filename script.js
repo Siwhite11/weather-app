@@ -105,6 +105,12 @@ function showPosition(response) {
   let description = response.data.weather[0].description;
   let currentDescription = document.querySelector("#description");
   currentDescription.innerHTML = `${description}`;
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+}
 }
 
 function retrievePosition(position) {
