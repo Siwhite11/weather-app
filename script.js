@@ -55,6 +55,14 @@ function showTemp(response) {
   let tempNow = Math.round(response.data.main.temp);
   tempElement.innerHTML = `${tempNow}°F`;
   fahrenheitTemp = response.data.main.temp;
+  let currentHumidity = document.querySelector("#humidity");
+  let humidity = Math.round(response.data.main.humidity);
+  currentHumidity.innerHTML = `${humidity}%`;
+  let currentWind = document.querySelector("#wind");
+  let wind = Math.round(response.data.wind.speed);
+  currentWind.innerHTML = `${wind} mph`;
+  let feels = document.querySelector("#feels");
+  feels.innerHTML = Math.round(response.data.main.feels_like);
 }
 
 let form1 = document.querySelector("#form1");
@@ -93,15 +101,8 @@ function getCurrentPosition() {
 let getLocation = document.querySelector("#location");
 getLocation.addEventListener("click", getCurrentPosition);
 
-//extra
-//let humidity = document.querySelector("#humidity");
-//humidity.innerHTML = Math.round(response.data.main.humidity);
-
-//let wind = document.querySelector("#wind");
-//wind.innerHTML = Math.round(response.data.wind.speed);
-
-//let feels = document.querySelector("#feels");
-//feels.innerHTML = Math.round(response.data.main.feels_like);
+let descriptionElement = document.querySelector("#description");
+descriptionElement.innerHTML = response.data.weather[0].description;
 
 // convert the temps
 
