@@ -58,7 +58,6 @@ function showTemp(response) {
   let currentHumidity = document.querySelector("#humidity");
   let humidity = Math.round(response.data.main.humidity);
   currentHumidity.innerHTML = `Humidity ${humidity}%`;
-  console.log(humidity);
   let currentFeels = document.querySelector("#feels");
   let feels = Math.round(response.data.main.feels_like);
   currentFeels.innerHTML = `Feels like ${feels}°F`;
@@ -85,6 +84,15 @@ function showPosition(response) {
   let temperature = Math.round(response.data.main.temp);
   h1.innerHTML = `${response.data.name}`;
   tempNow.innerHTML = `${temperature}°F`;
+  let currentHumidity = document.querySelector("#humidity");
+  let humidity = Math.round(response.data.main.humidity);
+  currentHumidity.innerHTML = `Humidity ${humidity}%`;
+  let currentFeels = document.querySelector("#feels");
+  let feels = Math.round(response.data.main.feels_like);
+  currentFeels.innerHTML = `Feels like ${feels}°F`;
+  let currentWind = Math.round(response.data.wind.speed);
+  let wind = document.querySelector("#wind");
+  wind.innerHTML = `Wind speed ${currentWind} mph`;
 }
 
 function retrievePosition(position) {
