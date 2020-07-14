@@ -89,7 +89,7 @@ function showPosition(response) {
   event.preventDefault();
   console.log(response.data);
   let h1 = document.querySelector("h1");
-  let h2 = document.querySelector("tempNow");
+  let tempNow = document.querySelector("tempNow");
   let temperature = Math.round(response.data.main.temp);
   tempNow.innerHTML = `${temperature}°F`;
   h1.innerHTML = `${response.data.name}`;
