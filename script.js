@@ -128,9 +128,6 @@ function getCurrentPosition() {
 let getLocation = document.querySelector("#location");
 getLocation.addEventListener("click", getCurrentPosition);
 
-//let descriptionElement = document.querySelector("#description");
-//descriptionElement.innerHTML = response.data.weather[0].description;
-
 // convert the temps
 
 //function displayCelsiusTemp(event) {
