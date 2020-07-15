@@ -92,7 +92,7 @@ function showPosition(response) {
   let h2 = document.querySelector("tempNow");
   let temperature = Math.round(response.data.main.temp);
   h1.innerHTML = `${response.data.name}`;
-  tempNow.innerHTML = `${temperature}°F`;
+  h2.innerHTML = `${temperature}°F`;
   let currentHumidity = document.querySelector("#humidity");
   let humidity = Math.round(response.data.main.humidity);
   currentHumidity.innerHTML = `Humidity ${humidity}%`;
