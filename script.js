@@ -53,7 +53,7 @@ function showTemp(response) {
   console.log(response.data);
   let tempElement = document.querySelector("#tempNow");
   let tempNow = Math.round(response.data.main.temp);
-  tempElement.innerHTML = `${tempNow}°F`;
+  tempElement.innerHTML = `${tempNow}`;
   fahrenheitTemp = response.data.main.temp;
   let currentHumidity = document.querySelector("#humidity");
   let humidity = Math.round(response.data.main.humidity);
@@ -91,7 +91,7 @@ function showPosition(response) {
   let h1 = document.querySelector("h1");
   let tempNow = document.querySelector("#tempNow");
   let tempElement = Math.round(response.data.main.temp);
-  tempNow.innerHTML = `${tempElement}°F`;
+  tempNow.innerHTML = `${tempElement}`;
   h1.innerHTML = `${response.data.name}`;
   let currentHumidity = document.querySelector("#humidity");
   let humidity = Math.round(response.data.main.humidity);
