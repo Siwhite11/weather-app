@@ -69,7 +69,7 @@ h3 {
   font-size: 15px;
 }
 
-.weather-temperature.active {
+.weather-temperature {
   color: #000000;
   cursor: default;
 }
