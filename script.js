@@ -135,7 +135,7 @@ function displayCelsiusTemp(event) {
   let ctemp = Math.round(((92 - 32) * 5) / 9);
   //alert(ctemp);
   let temperatureElement = document.querySelector("#c-link");
-  temperatureElement.innerHTML = `${ctemp}`;
+  temperatureElement.innerHTML = `${ctemp}°C`;
 }
 
 let celsiusLink = document.querySelector("#c-link");
