@@ -40,7 +40,6 @@ h4.innerHTML = ` ${hours}:${minutes} ${day} ${month} ${date} ${year}`;
 //Change Temp for City//
 
 function search(event) {
-  event.preventDefault();
   let search = document.querySelector("#search-text-input");
   let h1 = document.querySelector("h1");
   h1.innerHTML = `${search.value}`;
@@ -148,13 +147,3 @@ let fahrenheitLink = document.querySelector("#f-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
 
 search("New York");
-
-function pageLoad(event) {
-  event.preventDefault();
-  console.log(response.data);
-  let h1 = document.querySelector("h1");
-  let tempNow = document.querySelector("#tempNow");
-  let tempElement = Math.round(response.data.main.temp);
-  tempNow.innerHTML = `${tempElement}`;
-  h1.innerHTML = `${response.data.name}`;
-}
