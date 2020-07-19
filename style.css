@@ -69,12 +69,12 @@ h3 {
   font-size: 15px;
 }
 
-.c-link,
-.f-link {
+#c-link,
+#f-link {
   color: #000000;
   cursor: default;
 }
 
-.f-link.active: {
+#f-link.active: {
   text-decoration: none;
 }
