@@ -68,3 +68,12 @@ h3 {
 .me {
   font-size: 15px;
 }
+
+.weather-temperature.active {
+  color: #000000;
+  cursor: default;
+}
+
+.weather-temperature.active: {
+  text-decoration: none;
+}
