@@ -52,7 +52,7 @@ h3 {
 }
 .search2:hover,
 .search:hover {
-  background: #6385a8;
+  background: #3b7691;
   color: #fff;
 }
 
@@ -78,4 +78,7 @@ h3 {
 #f-link:hover,
 #c-link:hover {
   text-decoration: none;
+}
+.changeCity {
+  font-size: 15px;
 }
