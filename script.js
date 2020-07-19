@@ -150,4 +150,4 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
 let city = "New York";
 let apiKey = "b1b919a86239e80b1ad3fa4e4880db02";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`;
-axios.get(`${apiUrl}&appid=${apiKey}`);
+axios.get(`${apiUrl}&appid=${apiKey}`).then(showTemp);
