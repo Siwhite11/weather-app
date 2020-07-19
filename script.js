@@ -40,6 +40,7 @@ h4.innerHTML = ` ${hours}:${minutes} ${day} ${month} ${date} ${year}`;
 //Change Temp for City//
 
 function search(event) {
+  event.preventDefault();
   let search = document.querySelector("#search-text-input");
   let h1 = document.querySelector("h1");
   h1.innerHTML = `${search.value}`;
