@@ -130,13 +130,14 @@ getLocation.addEventListener("click", getCurrentPosition);
 
 // convert the temps
 
-//function displayCelsiusTemp(event) {
-//event.preventDefault();
-//let ctemp = Math.round(((fahrenheitTemp - 32) * 5) / 9);
-//let temperatureElement = document.querySelector("#c-link");
-//tempNow.innerHTML = ctemp;
-//}
+function displayCelsiusTemp(event) {
+  event.preventDefault();
+  alert("Link clicked");
+  // let ctemp = Math.round(((fahrenheitTemp - 32) * 5) / 9);
+  //let temperatureElement = document.querySelector("#c-link");
+  //temperatureElement.innerHTML = `${ctemp}`;
+}
 
-//let fahrenheitTemp = null;
-//let celsiusLink = document.querySelector("#c-link");
-//celsiusLink.addEventListener("click", displayCelsiusTemp);
+let fahrenheitTemp = null;
+let celsiusLink = document.querySelector("#c-link");
+celsiusLink.addEventListener("click", displayCelsiusTemp);
