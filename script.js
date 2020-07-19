@@ -132,11 +132,12 @@ getLocation.addEventListener("click", getCurrentPosition);
 
 function displayCelsiusTemp(event) {
   event.preventDefault();
-  let ctemp = Math.round(((92 - 32) * 5) / 9);
-  //alert(ctemp);
+  let ctemp = Math.round(((fahrenheitTemp - 32) * 5) / 9);
   let temperatureElement = document.querySelector("#c-link");
   temperatureElement.innerHTML = `${ctemp}°C`;
 }
+
+let fahrenheitTemp = null;
 
 let celsiusLink = document.querySelector("#c-link");
 celsiusLink.addEventListener("click", displayCelsiusTemp);
