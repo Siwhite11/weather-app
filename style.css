@@ -75,7 +75,7 @@ h3 {
   cursor: default;
 }
 
-#f-link.active:hover,
-#c-link.active:hover {
+#f-link:hover,
+#c-link:hover {
   text-decoration: none;
 }
