@@ -69,11 +69,12 @@ h3 {
   font-size: 15px;
 }
 
-.weather {
+.c-link,
+.f-link {
   color: #000000;
   cursor: default;
 }
 
-.weather.active: {
+.f-link.active: {
   text-decoration: none;
 }
