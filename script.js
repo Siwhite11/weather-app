@@ -139,5 +139,15 @@ function displayCelsiusTemp(event) {
   temperatureElement.innerHTML = `${ctemp}°C`;
 }
 
+function displayFahrenheitTemp(event) {
+  let temperatureElement = document.querySelector("f-link");
+  temperatureElement.innerHTML = `${ftemp}°F`;
+}
+
+let fahrenheitTemp = null;
+
 let celsiusLink = document.querySelector("#c-link");
 celsiusLink.addEventListener("click", displayCelsiusTemp);
+
+let fahrenheitLink = document.querySelector("#f-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
