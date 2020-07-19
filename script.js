@@ -132,8 +132,8 @@ getLocation.addEventListener("click", getCurrentPosition);
 
 function displayCelsiusTemp(event) {
   event.preventDefault();
-  fahrenheitTemp = response.data.main.temp;
-  let ctemp = Math.round(((fahrenheitTemp - 32) * 5) / 9);
+
+  let ctemp = Math.round(((92 - 32) * 5) / 9);
   alert(ctemp);
   //let temperatureElement = document.querySelector("#c-link");
   //temperatureElement.innerHTML = `${ctemp}`;
