@@ -108,6 +108,7 @@ function showPosition(response) {
     "src",
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  displayCelsiusTemp(event);
 }
 
 function retrievePosition(position) {
