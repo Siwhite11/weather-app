@@ -85,6 +85,7 @@ function searchCity(city) {
 function showPosition(response) {
   event.preventDefault();
   console.log(response.data);
+  fahrenheitTemp = response.data.main.temp;
   let h1 = document.querySelector("h1");
   let tempNow = document.querySelector("#tempNow");
   let tempElement = Math.round(response.data.main.temp);
