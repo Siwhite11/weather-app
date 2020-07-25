@@ -9,6 +9,7 @@ body {
   border: 5px solid #3b7691;
   border-radius: 10px;
   box-shadow: 10px 5px 5px #316177;
+  background-repeat: no-repeat;
 }
 
 h1 {
