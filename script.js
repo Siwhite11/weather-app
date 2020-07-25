@@ -43,7 +43,7 @@ function search(event) {
   event.preventDefault();
   let search = document.querySelector("#search-text-input");
   let h1 = document.querySelector("h1");
-  h1.innerHTML = `${search.value}`.toUpperCase;
+  h1.innerHTML = `${search.value}.toUpperCase`;
   searchCity(search.value);
 }
 function showTemp(response) {
