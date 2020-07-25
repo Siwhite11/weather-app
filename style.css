@@ -1,7 +1,7 @@
 body {
   text-align: center;
   font-size: 20px;
-  background-image: linear-gradient(to top, #ace0f9 0%, #3b7691 100%);
+
   display: block;
   margin: 100px auto;
   width: 800px;
@@ -9,7 +9,10 @@ body {
   border: 5px solid #3b7691;
   border-radius: 10px;
   box-shadow: 10px 5px 5px #316177;
-  background-repeat: no-repeat;
+}
+
+.entirety {
+  background-image: linear-gradient(to top, #ace0f9 0%, #3b7691 100%);
 }
 
 h1 {
@@ -80,7 +83,4 @@ h3 {
 #f-link:hover,
 #c-link:hover {
   text-decoration: none;
-}
-.changeCity {
-  font-size: 15px;
 }
