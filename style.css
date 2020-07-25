@@ -1,3 +1,7 @@
+body {
+  background-image: linear-gradient(to top, #ace0f9 100%, #3b7691 0%);
+}
+
 .container {
   text-align: center;
   font-size: 20px;
