@@ -20,6 +20,7 @@ h1 {
   margin-bottom: 25px;
   text-align: left;
   line-height: 40px;
+  text-transform: capitalize;
 }
 h2 {
   text-align: left;
